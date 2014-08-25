@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
+
+app=$1
+app_dir=$PLUSHU_ROOT/apps/$app
+docker_opt_file=$app_dir/docker-opts
+
+[[ -f "$docker_opt_file" ]] && cat "$docker_opt_file"
