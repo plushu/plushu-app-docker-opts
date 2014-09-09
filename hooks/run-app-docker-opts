@@ -2,7 +2,7 @@
 set -eo pipefail; [[ -n "$PLUSHU_TRACE" ]] && set -x
 
 app=$1
-app_dir=$PLUSHU_ROOT/apps/$app
+app_dir=$PLUSHU_APPS_DIR/$app
 docker_opt_file=$app_dir/docker-opts
 
 if [[ -f "$docker_opt_file" ]]; then

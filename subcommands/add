@@ -11,7 +11,7 @@ else
   exit 1
 fi
 
-app_dir=$PLUSHU_ROOT/apps/$app
+app_dir=$PLUSHU_APPS_DIR/$app
 
 # Check if app exists
 if [[ ! -d "$app_dir" ]]; then
